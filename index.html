@@ -2,52 +2,99 @@
     <!--Only use HTML, and need help with certain HTML elements ()-->
     <head>
         <style>
-            .bodyfill {
+
+            .titlename {
                 margin: 0;
                 padding: 5px;
-                background-color: rgb(82, 82, 82);
+                background-color: rgb(47, 41, 105);
+                text-align:center;
+
             }
             .leftbox {
                 margin: 5;
+                margin-top: 30px;
+                color:rgb(39, 39, 39);
+                font-size: large;
                 padding: 10px;
+                float: left;
+                width: 47%;
                 background-color: rgb(177, 174, 9);
+                text-align:center;
             }
             .rightbox {
                 margin: 5;
+                margin-top: 30px;
+                color:rgb(39, 39, 39);
+                font-size: large;
                 padding: 10px;
-                background-color: rgb(139, 72, 8)
+                float: right;
+                width: 47%;
+                background-color: rgb(204, 103, 8);
+                text-align:center;
             }
+            .bodyfill {
+                margin: 00;
+                border: 5px outset orange;
+                background-color: burlywood;
+                text-align:center;
+                height: 200pt;
+            }
+
+            .userDiv {
+                margin: 20;
+                border: 5px outset orange;
+                background-color: rgb(107, 67, 15);
+                text-align:center;
+            }
+
         </style>
     </head>
     <body>
+        <title>Cats and Dogs</title>
         <header>
             <h1>Dogs vs. Cats</h1>
         </header>
-        <article class ="bodyfill">
+        <article class ="titlename">
             <h2>Which Pet is the best for you?</h2>
+        </article>
+        <article class ="bodyfill">
             <article class ="leftbox">
-                <h3>dogs</h3>
+                <h3>DOGS</h3>
                 <p>
-                    <img src="golden_retriever.jpg" alt="A golden retriever" width="200" height="200"> <br>
+                    <img src= "images/golden_retriever.jpg" alt="A golden retriever" width="200" height="200"> <br>
                     Active lifestyle! <br>
-                    Ever so loyal!
-
+                    Ever so loyal! <br>
+                    Take a dive in the lake?
                 </p>
             </article>
             <article class ="rightbox">
-                <h3>cats</h3>
+                <h3>CATS</h3>
                 <p>
-                    <img src="cat_pic.jpg" alt="A golden retriever" width="200" height="200"> <br>
+                    <img src="/home/ryan3708/projects/courses/code-102/HTML-webpage/images/cat_pic.jpg" alt="A cat" width="200" height="200"> <br>
                     Low maintenance! <br>
                     Clean! <br>
-                    
+                    Your quiet roommate?
+
                 </p>
             </article>
         </article>
 
+        <article class ="userDiv">
+            <h1> Your favorite</h1>
+            <p>
+                <script>
+                    var userChoice = prompt("Are you a Cats person or a Dog person? (Type c or d)");
+                    if (userChoice == "c"){
+                        document.write(" is a Cat Person!")
+                    } else if (userChoice == "d"){
+                        document.write(" is a Dog person!")
+                    } else {
+                        var userChoice = prompt("Are you a Cats person or a Dog person? (Type c or d)");
+                    }
+                </script>>
+            </p>
 
-
-
+        </div>
     </body>
 
 </html>
